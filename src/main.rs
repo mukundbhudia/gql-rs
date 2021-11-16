@@ -1,7 +1,10 @@
-use gql_rs::start;
+use gql_rs::{start, Config};
 
 #[async_std::main]
 async fn main() {
-    println!("Started server");
-    start().await.expect("Failed to start server");
+    dotenv::dotenv().ok();
+    let config = Config::new().expect("Couldn't load config");
+
+    println!("Starting server with config: \n{}", config);
+    start(config).await.expect("Failed to start server");
 }
