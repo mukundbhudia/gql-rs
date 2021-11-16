@@ -7,8 +7,6 @@ edition = "2021"
 
 [dependencies]
 async-graphql = "2.0"
-async-graphql-actix-web = "2.0" # If you need to integrate into actix-web
-async-graphql-warp = "2.0" # If you need to integrate into warp
 async-graphql-tide = "2.0" # If you need to integrate into tide
 async-std = { version = "1.10", features = ["attributes"] }
 tide = { version = "0.16", default-features = false, features = ["h1-server"] }
