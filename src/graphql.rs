@@ -1,4 +1,5 @@
 use async_graphql::*;
+use tracing::info;
 
 use crate::state::State;
 
@@ -8,6 +9,7 @@ pub struct Query;
 impl Query {
     /// Returns the sum of a and b
     async fn add(&self, a: i32, b: i32) -> i32 {
+        info!(a, b, "Running add query");
         a + b
     }
 }
@@ -18,7 +20,7 @@ pub struct Mutation;
 impl Mutation {
     async fn increment(&self, context: &Context<'_>, a: i32) -> Result<i32, anyhow::Error> {
         let _state = context.data::<State>().expect("No State found in state");
-
+        info!(a, "Running increment mutation");
         Ok(a)
     }
 }
