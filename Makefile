@@ -57,7 +57,7 @@ db-stop:
 run: export RUST_LOG=debug
 run: export RUST_BACKTRACE=1
 run:
-	@(cargo run --bin promo-api)
+	@(cargo run --bin gql-rs)
 
 .PHONY: lint
 lint:
