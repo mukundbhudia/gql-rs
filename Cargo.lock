@@ -91,6 +91,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8b26702f315f53b6071259e15dd9d64528213b44d61de1ec926eca7715d62203"
 
 [[package]]
+name = "ascii_utils"
+version = "0.9.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "71938f30533e4d95a6d17aa530939da3842c2ab6f4f84b9dae68447e4129f74a"
+
+[[package]]
 name = "async-attributes"
 version = "1.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -153,9 +159,9 @@ dependencies = [
 
 [[package]]
 name = "async-graphql"
-version = "3.0.15"
+version = "3.0.20"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ed5dda87d4742c67d2a6df36e0a0de94d315baf761a2404ea46f57314539151e"
+checksum = "b7b72874e1b4bebe34cfd204a0d938225a7e25714315a5f714173842b6d16849"
 dependencies = [
  "async-graphql-derive",
  "async-graphql-parser",
@@ -163,6 +169,7 @@ dependencies = [
  "async-stream",
  "async-trait",
  "bytes",
+ "fast_chemail",
  "fnv",
  "futures-util",
  "http",
@@ -182,9 +189,9 @@ dependencies = [
 
 [[package]]
 name = "async-graphql-derive"
-version = "3.0.15"
+version = "3.0.20"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "14babc9dfa3279b0a3165cf1919f681c72188c6b1b925932106bf3c153b3e0ba"
+checksum = "646536d653be53fa2ff831d7a4083367d2ea7e333e5710e540596721e598ecad"
 dependencies = [
  "Inflector",
  "async-graphql-parser",
@@ -198,9 +205,9 @@ dependencies = [
 
 [[package]]
 name = "async-graphql-parser"
-version = "3.0.15"
+version = "3.0.20"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "24f3748ab1d7468dcd2697aa3d98259f5b7d2d5223034780aea43b1bfdc792f5"
+checksum = "b47576aba6c1474888689c5d67a2a7b7f9f650d3122157e00fa14f0c01945f8a"
 dependencies = [
  "async-graphql-value",
  "pest",
@@ -211,9 +218,9 @@ dependencies = [
 
 [[package]]
 name = "async-graphql-tide"
-version = "3.0.15"
+version = "3.0.20"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7f756a9a2a0a26785f673b3cb79f451e4777fd0c58b69fbb5515441aa70ed634"
+checksum = "81c2fbf3263c001d005e84cf0919633a1793239bc27ea56b893d17598f5f5f7e"
 dependencies = [
  "async-graphql",
  "async-trait",
@@ -225,9 +232,9 @@ dependencies = [
 
 [[package]]
 name = "async-graphql-value"
-version = "3.0.15"
+version = "3.0.20"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "422dc960130eec5354acda269343600fa34279aa97a8843bc45d574ffed6559f"
+checksum = "28a266653068d17107cc3b5d9d9eb245b1a49a43501b2317af4f1959624346d5"
 dependencies = [
  "bytes",
  "indexmap",
@@ -754,6 +761,15 @@ name = "fake-simd"
 version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e88a8acf291dafb59c2d96e8f59828f3838bb1a70398823ade51a84de6a6deed"
+
+[[package]]
+name = "fast_chemail"
+version = "0.9.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "495a39d30d624c2caabe6312bfead73e7717692b44e0b32df168c275a2e8e9e4"
+dependencies = [
+ "ascii_utils",
+]
 
 [[package]]
 name = "fastrand"
