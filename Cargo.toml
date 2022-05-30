@@ -8,7 +8,7 @@ edition = "2021"
 [dependencies]
 anyhow = "1.0"
 async-graphql = "3.0"
-async-graphql-tide = "3.0" # If you need to integrate into tide
+async-graphql-tide = "4.0" # If you need to integrate into tide
 async-std = { version = "1.10", features = ["attributes"] }
 envy = "0.4"
 diesel = { version = "1.4", features = ["chrono", "postgres"]}
